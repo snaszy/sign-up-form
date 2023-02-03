@@ -1,0 +1,22 @@
+* {
+    font-family: "Noto Serif",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    flex: 1;
+    background-image: url("https://images.unsplash.com/photo-1668625596972-5498e448b060?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-size: cover;
+    height: 100vh;
+}
+
+main {
+    flex: 2;
+    padding: 50px;
+}
