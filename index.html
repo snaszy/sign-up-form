@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="background">
-                <div class="logo"></div>
+                <img  class="logo" src="https://img.freepik.com/free-vector/editable-hotel-logo-vector-business-corporate-identity-with-boutique-hotels-resort-message_53876-111555.jpg?w=740&t=st=1675555632~exp=1675556232~hmac=223d7dd91f5b901f85175bd1c098c04bc7d8a79ed45851c4565089eab3d36606">
             </div>
         </div>
     </header>
@@ -20,31 +20,51 @@
         <div class="top">
             <h1>This is not a real online service! You know you need something
                 like this in your life to help you realize  your deepest dreams.
-                Sign up <em>now</em> to get started.
+                Sign up <em>now </em> to get started.
             </h1>
             <h1>
-                You <em>know</em> you want to.
+                You <em>know </em> you want to.
             </h1>
         </div>
-        <div class="form">
+        <form action="#" method="get">
+        <div class="form-container no-bottom">
             <h2>Let's do this!</h2>
-            <form>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
-            </form>
+                <div class="name">
+                    <div class="form-field">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="form-field">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+                <div class="name">
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number">
+                    </div>
+                </div>
+                <div class="name">
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" minlength="1" required>
+                        <div class="error">*Passwords do not match</div>
+                    </div>
+                    <div class="form-field">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" id="confirm" minlength="1" required>
+                        <div class="error">*Passwords do not match</div>
+                    </div>
+                </div>
         </div>
         <div class="bottom">
-            <button>Create Account</button>
+            <button type="submit">Create Account</button>
+        </form>
             <h3>Already have an account? Log in</h3>
         </div>
     </main>

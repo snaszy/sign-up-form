@@ -13,10 +13,91 @@ header {
     flex: 1;
     background-image: url("https://images.unsplash.com/photo-1668625596972-5498e448b060?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
     background-size: cover;
-    height: 100vh;
+}
+
+.background {
+    margin-top: 25vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 25vh;
+    text-align: center;
+}
+
+.logo {
+    padding: auto;
+    width: 25vh;
+    border-radius: 50%;
 }
 
 main {
     flex: 2;
+}
+
+.top {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 50px;
+}
+
+.form-container {
     padding: 50px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.no-bottom {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.name {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+
+.form-field {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 50px;
+}
+
+button {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+input {
+    padding-left: 5px;
+    line-height: 1.5rem;
+    border-width: .5pt;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid blue;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+#password:invalid, #confirm:invalid {
+    border-color:  rgb(230, 0, 0);
+}
+
+#password:invalid ~ .error, #confirm:invalid ~ .error {
+    display: block;
+    color: rgb(230, 0, 0);
+    font-size: 10pt;
+}
+
+.error {
+    display: none;
 }
